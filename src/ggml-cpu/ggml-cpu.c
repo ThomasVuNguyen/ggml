@@ -83,10 +83,6 @@
 
 #define SWAP(x, y, T) do { T SWAP = x; (x) = y; (y) = SWAP; } while (0)
 
-#if defined(GGML_USE_ACCELERATE)
-#include <Accelerate/Accelerate.h>
-#endif
-
 #if defined(__ARM_ARCH)
 struct ggml_arm_arch_features_type {
     int has_neon;

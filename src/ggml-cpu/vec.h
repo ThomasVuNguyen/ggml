@@ -10,6 +10,10 @@
 
 #define UNUSED GGML_UNUSED
 
+#if defined(GGML_USE_ACCELERATE)
+#include <Accelerate/Accelerate.h>
+#endif
+
 // floating point type used to accumulate sums
 typedef double ggml_float;
 
