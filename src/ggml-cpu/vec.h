@@ -800,3 +800,4 @@ inline static void ggml_vec_argmax_f32(const int n, int * s, const float * x) {
 #ifdef __cplusplus
 }
 #endif
+
