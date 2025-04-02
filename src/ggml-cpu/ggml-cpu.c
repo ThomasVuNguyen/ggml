@@ -11,8 +11,8 @@
 #include "ggml-threading.h"
 #include "unary-ops.h"
 #include "binary-ops.h"
-#include "ops.h"
 #include "vec.h"
+#include "ops.h"
 #include "ggml.h"
 
 #if defined(_MSC_VER) || defined(__MINGW32__)
@@ -82,6 +82,7 @@
 #endif
 #endif // __has_feature
 
+#define UNUSED GGML_UNUSED
 #define SWAP(x, y, T) do { T SWAP = x; (x) = y; (y) = SWAP; } while (0)
 
 #if defined(__ARM_ARCH)
