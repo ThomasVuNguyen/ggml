@@ -12,6 +12,7 @@ CMakeSettings.json
 .clangd
 
 .venv/
+myenv/
 ggml_env/
 .exrc
 .cache
